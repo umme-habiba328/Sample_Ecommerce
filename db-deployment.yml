@@ -19,15 +19,9 @@ spec:
             - name: MYSQL_ROOT_PASSWORD
               value: "123456"
             - name: MYSQL_USER
-              valueFrom:
-                configMapKeyRef:
-                  name: db-config
-                  key: MYSQL_USER
+              value: habiba
             - name: MYSQL_DATABASE
-              valueFrom:
-                configMapKeyRef:
-                  name: db-config
-                  key: MYSQL_DATABASE
+              value: ecomdb
           ports:
             - containerPort: 3306
 ---
